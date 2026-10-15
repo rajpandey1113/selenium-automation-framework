@@ -15,7 +15,7 @@ import com.raj.automation.pages.LoginPage;
 
 public class LoginTest extends BaseTest {
 
-    @Test
+    @Test(groups = {"smoke", "regression"})
     public void loginTest() {
         System.out.println(
     "Test: " + Thread.currentThread().getName()
@@ -46,7 +46,7 @@ public class LoginTest extends BaseTest {
 
     }
 
-        @Test
+        @Test(groups = {"regression"})
         public void inValidLoginTest(){
              System.out.println("invalidLoginTest running on: "
         + Thread.currentThread().getName());
